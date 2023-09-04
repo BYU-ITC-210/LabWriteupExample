@@ -1,24 +1,26 @@
+*This sample is intended to show the expected layout and length of a lab writeup. The application is fictional and many of the described actors and protocols don't exist. The diagrams and the accompanying text don't necessarily match. In your writeups, all components should exist, and there should be coherence between the text and the images.*
+
 ## Introduction:
 John Smith  
-1/20/23  
+20 January 2023  
 Lab 1  
 
 ## Executive Summary:
-In this lab, an API was created using Node.js and then hosted on an AWS EC2 instance. The API allows an authenticated user to create, update, view, and delete tasks on a to-do list. There is also functionality for users to log in and log out using a google account.
 
-<br>  
+This lab implements an API for storing widgets in isolated or aggregated form. Authentication is delegated to Jupiter using the IA67 protocol. A self-test and diagnostics framework is also included.
 
 ## Design Overview:
 
-### Example UML Title 
+The following UML diagram shows the basic architecture of the widget application. The swimlanes in the UML show the actions taken by the different actors in the system.
+
+### Example UML Caption or Title
 ![Example UML](./img/example-UML.png)
-Make all of the needed UMLs are included of the correct type for the lab and each one has a title.
 
-<br>  
+*Each lab indicate the type of UML that is expected in the writeup. Ensure such UMLs are included.*
 
-## Example Screenshots
+As indicated in the UML, all actions are initiated by the motivator which communicates with the front-end server. Each the server accesses the database by way of the biphasic louderberry protocol. Responses are then reformatted into JSON and returned to the motivator.
 
-The screenshots will normally be of the front-end design but in this case, an API has no front-end so other screenshots are acceptable
+The following screenshots show the User Endpoint, the Tasks Endpoint, and the Google Login.
 
 ### User Endpoint
 ![Example Screenshots](./img/user.png)
@@ -31,15 +33,13 @@ The screenshots will normally be of the front-end design but in this case, an AP
 
 ### File Descriptions
 
-routes/auth.js - Contains the endpoints for logging the user in and out  
-routes/tasks.js - Contains all the endpoints to perform the CRUD functions for the tasks  
-routes/user.js - Contains the GET endpoint to get all the user data  
-models/Task.js - Contains the task model to interact with the Mongo database  
-mongoose.js - Creates the connection to the Mongo database  
-mssqldb.js - Creates the connection to the Azure database  
-passport.js - Creates the passport session
-
-<br>  
+* routes/auth.js - Contains the endpoints for logging the user in and out  
+* routes/tasks.js - Contains all the endpoints to perform the CRUD functions for the tasks  
+* routes/user.js - Contains the GET endpoint to get all the user data  
+* models/Task.js - Contains the task model to interact with the Mongo database  
+* mongoose.js - Creates the connection to the Mongo database  
+* mssqldb.js - Creates the connection to the Azure database  
+* passport.js - Creates the passport session
 
 ## Questions (4 pts):
 
@@ -60,25 +60,20 @@ passport.js - Creates the passport session
     
     GET, PUT and DELETE are idempotent whereas POST is not non-idempotent
 
-<br>
-
 ## Lessons Learned (4 pts):
 
 ### JavaScript Comparisons  
 
 JavaScript does extremely loose comparisons. Therefore if (thisVar == 0) will evaluate true if thisVar = 0 or null or “” or false. This problem often arises when doing an if statement where you want to check if something is not blank but 0 is a good value. To solve this problem use === or !==. These mean an exact comparison, not a loose comparison. Therefore if (thisVar === “”) and thisVar = 0 it will be false. On the other hand if (thisVar == “”) and thisVar = 0 it will evaluate true.
 
-There should be 3 lessons learned in your write-up, not just one.
-
-<br>
+*There should be 3 lessons learned in your write-up, not just one.*
 
 ## Conclusions :
+
 - Use nodejs to create an API
 - Install packages using npm
 - Create an SSL certificate
 - Create firewall rules to allow traffic
-
-<br>
 
 ## References
 
