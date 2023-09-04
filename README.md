@@ -16,7 +16,7 @@ The following UML diagram shows the basic architecture of the widget application
 ### Example UML Caption or Title
 ![Example UML](./img/example-UML.png)
 
-*Each lab indicate the type of UML that is expected in the writeup. Ensure such UMLs are included.*
+*Each lab indicates the type of UML that is expected in the writeup. Ensure such UMLs are included.*
 
 As indicated in the UML, all actions are initiated by the motivator which communicates with the front-end server. Each the server accesses the database by way of the biphasic louderberry protocol. Responses are then reformatted into JSON and returned to the motivator.
 
