@@ -41,7 +41,7 @@ The following screenshots show the User Endpoint, the Tasks Endpoint, and the Go
 * mssqldb.js - Creates the connection to the Azure database  
 * passport.js - Creates the passport session
 
-## Questions (4 pts):
+## Questions:
 
 1. List three advantages to using a web API.
     - The front end and back end can be developed at the same time
@@ -60,7 +60,7 @@ The following screenshots show the User Endpoint, the Tasks Endpoint, and the Go
     
     GET, PUT and DELETE are idempotent whereas POST is not non-idempotent
 
-## Lessons Learned (4 pts):
+## Lessons Learned:
 
 ### JavaScript Comparisons  
 
