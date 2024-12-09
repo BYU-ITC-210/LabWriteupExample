@@ -16,7 +16,7 @@ The following UML diagram shows the basic architecture of the widget application
 ### Example UML Caption or Title
 ![Example UML](./img/example-UML.png)
 
-*Each lab indicates the type of UML that is expected in the writeup. Ensure such UMLs are included.*
+*Each lab instruction indicates the type of UML that is expected in the writeup. Ensure such UMLs are included.*
 
 As indicated in the UML, all actions are initiated by the motivator which communicates with the front-end server. Each the server accesses the database by way of the biphasic louderberry protocol. Responses are then reformatted into JSON and returned to the motivator.
 
@@ -42,6 +42,8 @@ The following screenshots show the User Endpoint, the Tasks Endpoint, and the Go
 * passport.js - Creates the passport session
 
 ## Questions:
+
+*The Questions to answer can be found at the bottom of each lab instruction. Ensure you have the questions from both part A and part B in your writeup*
 
 1. List three advantages to using a web API.
     - The front end and back end can be developed at the same time
